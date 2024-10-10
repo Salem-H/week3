@@ -1,0 +1,35 @@
+<!-- <body></body>
+<script>
+    a = 6
+    b = 7
+    c = a + b
+    document.write(c)
+</script> -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>
+        web demo
+    </h1>
+
+    QTY <input type="number" value="1" id="qty"> &lt;--Input<br>
+    Desc  <input type="text" value="pencil" id="desc" readonly> <br>
+    EACH <input type="number" value="2" id="each" readonly><br>
+    EXT PRICE <input type="number" value="1.23" id="ext" readonly><br>
+    <button id="calc">CALC</button>
+ </body>
+ <script>
+    calc.addEventListener("click", ()=>{
+        const q = Number(qty.value);
+        const p = Number(each.value);
+        amount = q * p;
+        ext.value = amount.toFixed(2);
+    });
+
+ </script>
+ </html>
